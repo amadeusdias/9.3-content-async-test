@@ -14,7 +14,7 @@ const fetchSimulator = (url) => {
   }
   // Verifica se o objeto de endpoint inclui a url passada por parâmetro
   const validUrl = Object.values(ENDPOINTS).includes(url);
-  // retorna a promise resolvida
+  // retorna a promise resolvida!
   return Promise.resolve({
     // se a url for válida, retorna o código de sucesso(200), caso contrário, retorna o código de erro(404)
     status: validUrl ? 200 : 404,
